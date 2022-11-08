@@ -1,4 +1,4 @@
-;; This contract implements the community-standard Fungible Token trait.
+;; This contract implements the SIP010 community-standard Fungible Token trait.
 (impl-trait 'SP3FBR2AGK5H9QBDH3EEN6DF8EK8JY7RX8QJ5SVTE.sip-010-trait-ft-standard.sip-010-trait)
 
 ;; Define the FT, with no maximum supply
@@ -29,7 +29,7 @@
   (ok "CC")
 )
 
-;; The number of decimals used for display. STX, for example, uses 6.
+;; The number of decimals used for display. e.g. 6 means 1_000_000 represents 1 token
 (define-read-only (get-decimals)
   (ok u6)
 )

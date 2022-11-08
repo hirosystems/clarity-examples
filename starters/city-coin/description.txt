@@ -1,1 +1,1 @@
-New York City coin example.
+Complete implementation of the New York City coin.

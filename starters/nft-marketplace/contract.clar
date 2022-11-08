@@ -4,6 +4,8 @@
 ;; - The payment asset, either STX or a SIP010 fungible token.
 ;; - The NFT price in said payment asset.
 ;; - An optional intended taker. If set, only that principal will be able to fulfil the listing.
+;;
+;; Source: https://github.com/clarity-lang/book/tree/main/projects/tiny-market
 
 (use-trait nft-trait 'SP2PABAF9FTAJYNFZH93XENAJ8FVY99RRM50D2JG9.nft-trait.nft-trait)
 (use-trait ft-trait 'SP3FBR2AGK5H9QBDH3EEN6DF8EK8JY7RX8QJ5SVTE.sip-010-trait-ft-standard.sip-010-trait)
