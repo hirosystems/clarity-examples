@@ -1,6 +1,5 @@
 ;; This contract implements the SIP009 community-standard Non-Fungible Token trait
 (impl-trait 'SP2PABAF9FTAJYNFZH93XENAJ8FVY99RRM50D2JG9.nft-trait.nft-trait)
-;;testnet: (impl-trait 'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE.nft-trait.nft-trait)
 
 ;; Define the NFT's name
 (define-non-fungible-token Your-NFT-Name uint)
@@ -10,7 +9,7 @@
 
 ;; Define constants
 (define-constant CONTRACT-OWNER tx-sender)
-(define-constant NFT-LIMIT u1000) ;; Limit to series of 1000
+(define-constant COLLECTION-LIMIT u1000) ;; Limit to series of 1000
 (define-constant ERR-OWNER-ONLY (err u100))
 (define-constant ERR-NOT-TOKEN-OWNER (err u101))
 (define-constant ERR-SOLD-OUT (err u300))
@@ -46,7 +45,7 @@
     (
       (token-id (+ (var-get last-token-id) u1)) ;; Create the new token ID by incrementing the last minted ID.
     )
-    (asserts! (< (var-get last-token-id) NFT_LIMIT) ERR-SOLD-OUT) ;; Ensure the collection stays within the limit.
+    (asserts! (< (var-get last-token-id) COLLECTION-LIMIT) ERR-SOLD-OUT) ;; Ensure the collection stays within the limit.
     (asserts! (is-eq tx-sender CONTRACT-OWNER) ERR-OWNER-ONLY) ;; Only the contract owner can mint.
     (try! (nft-mint? Your-NFT-Name token-id recipient)) ;; Mint the NFT and send it to the given recipient.
     (var-set last-token-id token-id) ;; Update the last minted token ID.

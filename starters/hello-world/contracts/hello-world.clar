@@ -9,15 +9,9 @@
 (define-public (echo-number (val int))
   (ok val))
 
-;; An on-chain counter that can be incremented by anyone
-(define-data-var counter int 0)
-
-(define-read-only (get-counter)
-  (var-get counter))
-
-(define-public (increment-counter)
-  (let ((value (var-get counter)))
-    (ok (var-set counter (+ value 1)))))
+;; Constants
+(define-constant my-constant "This is a constant value")
+(define-constant contract-owner tx-sender)
 
 ;; A private function (can only be called by this contract)
 (define-private (is-valid-caller)
@@ -40,9 +34,6 @@
 
 ;; Fold a list: sums all the numbers
 (fold + (list u1 u2 u3) u0)
-
-;; Constant
-(define-constant my-constant "This is a constant value")
 
 ;; Mutable variable
 (define-data-var my-number uint u0)

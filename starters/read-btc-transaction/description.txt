@@ -1,1 +1,0 @@
-An example of reading & verifying a transaction on the Bitcoin blockchain.
