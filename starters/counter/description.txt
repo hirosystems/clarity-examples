@@ -1,0 +1,1 @@
+An on-chain counter that stores and increments a count for each individual.
