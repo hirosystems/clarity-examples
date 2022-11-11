@@ -1,1 +1,1 @@
-Utilities for reading & verifying transactions on the Bitcoin blockchain.
+Clarity functions that help with reading and verifying transactions on the Bitcoin blockchain.

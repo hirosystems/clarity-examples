@@ -1,1 +1,1 @@
-Fraud-proof swaps using Lightning.
+A fraud-proof swaps implementation using Lightning protocol.
