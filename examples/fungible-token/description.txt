@@ -1,1 +1,1 @@
-An implementation of fungible tokens in Clarity.
+An implementation of SIP010-compliant fungible token in Clarity.

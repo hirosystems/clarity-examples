@@ -1,1 +1,1 @@
-A simple NFT marketplace that allows users to list NFTs for sale.
+A simple NFT marketplace implementation to list NFTs for sales.
