@@ -3,11 +3,13 @@
 
 ;; A function that returns a message
 (define-public (say-hi)
-  (ok "Hello World"))
+  (ok "Hello World")
+)
     
 ;; A function that returns an input number
 (define-public (echo-number (val int))
-  (ok val))
+  (ok val)
+)
 
 ;; A function that conditionally returns an ok or an error
 (define-public (check-it (flag bool))
