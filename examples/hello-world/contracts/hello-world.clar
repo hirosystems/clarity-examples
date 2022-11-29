@@ -1,11 +1,11 @@
 ;; A print expression
 (print "Hello World")
 
-;; A function that prints a message
+;; A function that returns a message
 (define-public (say-hi)
   (ok "Hello World"))
     
-;; A function that prints an input number
+;; A function that returns an input number
 (define-public (echo-number (val int))
   (ok val))
 
