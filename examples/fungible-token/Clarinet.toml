@@ -1,5 +1,5 @@
 [project]
-name = 'fungible-token-real'
+name = 'fungible-token'
 description = ''
 authors = []
 telemetry = true

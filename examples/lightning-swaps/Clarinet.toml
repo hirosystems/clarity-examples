@@ -1,12 +1,12 @@
 [project]
-name = 'lightning-swaps-real'
+name = 'lightning-swaps'
 description = ''
 authors = []
 telemetry = true
 cache_dir = './.cache'
 requirements = []
-[contracts.lightning-swaps-v1]
-path = 'contracts/lightning-swaps-v1.clar'
+[contracts.stxswap_v10]
+path = 'contracts/stxswap_v10.clar'
 clarity_version = 1
 [repl.analysis]
 passes = ['check_checker']

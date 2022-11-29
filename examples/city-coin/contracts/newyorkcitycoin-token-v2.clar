@@ -1,5 +1,6 @@
 ;; NEWYORKCITYCOIN TOKEN CONTRACT
 ;; CityCoins Protocol Version 1.0.1
+;; source: https://github.com/citycoins/contracts/blob/develop/contracts/cities/nyc/mainnet/newyorkcitycoin-token-v2.clar
 
 ;; CONTRACT OWNER
 

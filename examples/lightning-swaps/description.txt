@@ -1,1 +1,1 @@
-A fraud-proof swaps implementation using Lightning protocol.
+A submarine swap implementation to provide a fast, private way of swapping Lightning Network Bitcoin for Stacks and vice versa.
