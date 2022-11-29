@@ -5,9 +5,9 @@
 (define-fungible-token clarity-coin)
 
 ;; Define constants for the transaction sender (deployer) and error codes.
-(define-constant contract-owner tx-sender)
-(define-constant err-owner-only (err u100))
-(define-constant err-not-token-owner (err u101))
+(define-constant CONTRACT_OWNER tx-sender)
+(define-constant ERR_OWNER_ONLY (err u100))
+(define-constant ERR_NOT_TOKEN_OWNER (err u101))
 
 ;; Returns the balance of a specified principal.
 (define-read-only (get-balance (who principal))
@@ -44,7 +44,7 @@
 ;; Only the contract deployer can perform this operation.
 (define-public (mint (amount uint) (recipient principal))
   (begin
-    (asserts! (is-eq tx-sender contract-owner) err-owner-only)
+    (asserts! (is-eq tx-sender CONTRACT_OWNER) ERR_OWNER_ONLY)
     (ft-mint? clarity-coin amount recipient)
   )
 )
@@ -53,7 +53,7 @@
 ;; Sender must be the same as the caller to prevent principals from transferring tokens they do not own.
 (define-public (transfer (amount uint) (sender principal) (recipient principal) (memo (optional (buff 34))))
   (begin
-    (asserts! (is-eq tx-sender sender) err-not-token-owner)
+    (asserts! (is-eq tx-sender sender) ERR_NOT_TOKEN_OWNER)
     (try! (ft-transfer? clarity-coin amount sender recipient))
     (match memo to-print (print to-print) 0x)
     (ok true)
