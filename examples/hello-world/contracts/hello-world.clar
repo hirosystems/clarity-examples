@@ -17,12 +17,12 @@
 )
 
 ;; Constants
-(define-constant my-constant "This is a constant value")
-(define-constant contract-owner tx-sender)
+(define-constant MY_CONSTANT "This is a constant value")
+(define-constant CONTRACT_OWNER tx-sender)
 
 ;; A private function (can only be called by this contract)
 (define-private (is-valid-caller)
-  (is-eq contract-owner tx-sender)
+  (is-eq CONTRACT_OWNER tx-sender)
 )
 
 ;; Get the STX balance of a wallet's address or a contract
@@ -43,8 +43,8 @@
 (fold + (list u1 u2 u3) u0)
 
 ;; Mutable variable
-(define-data-var my-number uint u0)
-(var-set my-number u5000)
+(define-data-var myNumber uint u0)
+(var-set myNumber u5000)
 
 ;; Tuple data structure
 {
@@ -54,14 +54,14 @@
 }
 
 ;; Map data structure
-(define-map scores principal uint)
+(define-map Scores principal uint)
 ;; Insert a value to a map
-(map-insert scores tx-sender u100)
+(map-insert Scores tx-sender u100)
 ;; This second insert will do nothing because the key already exists
-(map-insert scores tx-sender u200)
+(map-insert Scores tx-sender u200)
 ;; The score for tx-sender will be u100.
-(print (map-get? scores tx-sender))
+(print (map-get? Scores tx-sender))
 ;; Delete the entry for tx-sender.
-(map-delete scores tx-sender)
+(map-delete Scores tx-sender)
 ;; Will return none because the entry got deleted.
-(print (map-get? scores tx-sender))
+(print (map-get? Scores tx-sender))
