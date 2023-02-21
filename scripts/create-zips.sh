@@ -3,7 +3,7 @@
 cd examples
 
 for dir in */; do
-  zip -r "${dir%/}.zip" "$dir"
+  zip -r "../zips/${dir%/}.zip" "$dir"
 done
 
 cd ..
