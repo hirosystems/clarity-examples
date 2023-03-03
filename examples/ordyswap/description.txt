@@ -1,0 +1,1 @@
+A contract implementing a trustless peer-to-peer atomic swap between Bitcoin Ordinals and STX.
