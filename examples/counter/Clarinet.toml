@@ -1,19 +1,12 @@
 [project]
 name = "counter"
+description = "An on-chain counter function in Clarity that stores and increments a count on every transaction."
 authors = []
-description = ""
 telemetry = true
-requirements = []
-boot_contracts = ["pox", "costs-v2", "bns"]
+cache_dir = './.cache'
 
-[project.cache_location]
-path = "./.requirements"
 [contracts.counter]
 path = "contracts/counter.clar"
-
-[repl]
-costs_version = 2
-parser_version = 2
 
 [repl.analysis]
 passes = ["check_checker"]

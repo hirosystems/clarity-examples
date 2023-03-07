@@ -14,7 +14,7 @@
 (define-constant ERR-PROOF-TOO-SHORT u6)
 
 ;; lookup table for converting 1-byte buffers to uints via index-of
-(define-constant BUFF_TO_BYTE (list 
+(define-constant BUFF_TO_BYTE (list
    0x00 0x01 0x02 0x03 0x04 0x05 0x06 0x07 0x08 0x09 0x0a 0x0b 0x0c 0x0d 0x0e 0x0f
    0x10 0x11 0x12 0x13 0x14 0x15 0x16 0x17 0x18 0x19 0x1a 0x1b 0x1c 0x1d 0x1e 0x1f
    0x20 0x21 0x22 0x23 0x24 0x25 0x26 0x27 0x28 0x29 0x2a 0x2b 0x2c 0x2d 0x2e 0x2f
@@ -310,7 +310,7 @@
         (byte-6 (buff-to-u8 (unwrap! (element-at data (+ u5 base)) (err ERR-OUT-OF-BOUNDS))))
         (byte-7 (buff-to-u8 (unwrap! (element-at data (+ u6 base)) (err ERR-OUT-OF-BOUNDS))))
         (byte-8 (buff-to-u8 (unwrap! (element-at data (+ u7 base)) (err ERR-OUT-OF-BOUNDS))))
-        (ret (+ 
+        (ret (+
            (* byte-8 u72057594037927936)
            (* byte-7 u281474976710656)
            (* byte-6 u1099511627776)
@@ -438,7 +438,7 @@
     }))
 )
 
-;; Inner fold method to read the next tx input from txbuff. 
+;; Inner fold method to read the next tx input from txbuff.
 ;; The index in ctx will be updated to point to the next tx input if all goes well (or to the start of the outputs)
 ;; Returns (ok { ... }) on success.
 ;; Returns (err ERR-OUT-OF-BOUNDS) if we read past the end of txbuff.
@@ -543,7 +543,7 @@
                                     value: (get uint64 parsed-value),
                                     scriptPubKey: (unwrap! (as-max-len? (get varslice parsed-script) u128) (err ERR-VARSLICE-TOO-LONG))
                                 })
-                        u8) 
+                        u8)
                         (err ERR-TOO-MANY-TXOUTS))
                 }))
                 (ok state)
@@ -715,7 +715,7 @@
 ;; * The list of hashes that link the txid to the merkle root,
 ;; * The depth of the block's merkle tree (required because Bitcoin does not identify merkle tree nodes as being leaves or intermediates).
 ;; The _reversed_ txid is required because that's the order (big-endian) processes them in.
-;; The tx-index is required because it tells us the left/right traversals we'd make if we were walking down the tree from root to transaction, 
+;; The tx-index is required because it tells us the left/right traversals we'd make if we were walking down the tree from root to transaction,
 ;; and is thus used to deduce the order in which to hash the intermediate hashes with one another to link the txid to the merkle root.
 ;; Returns (ok true) if the proof is valid.
 ;; Returns (ok false) if the proof is invalid.
@@ -738,7 +738,7 @@
 ;; * the transaction's merkle proof links it to the block header's merkle root.
 ;; The proof is a list of sibling merkle tree nodes that allow us to calculate the parent node from two children nodes in each merkle tree level,
 ;; the depth of the block's merkle tree, and the index in the block in which the given transaction can be found (starting from 0).
-;; The first element in hashes must be the given transaction's sibling transaction's ID.  This and the given transaction's txid are hashed to 
+;; The first element in hashes must be the given transaction's sibling transaction's ID.  This and the given transaction's txid are hashed to
 ;; calculate the parent hash in the merkle tree, which is then hashed with the *next* hash in the proof, and so on and so forth, until the final
 ;; hash can be compared against the block header's merkle root field.  The tx-index tells us in which order to hash each pair of siblings.
 ;; Note that the proof hashes -- including the sibling txid -- must be _big-endian_ hashes, because this is how Bitcoin generates them.
