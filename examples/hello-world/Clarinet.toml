@@ -1,19 +1,13 @@
 [project]
-name = "hello-world-real"
+name = "hello-world"
+description = "A beginner smart contract with examples of commonly used Clarity expressions and data structures."
 authors = []
-description = ""
 telemetry = true
-requirements = []
-boot_contracts = ["pox", "costs-v2", "bns"]
+cache_dir = './.cache'
 
-[project.cache_location]
-path = "./.requirements"
+
 [contracts.hello-world]
 path = "contracts/hello-world.clar"
-
-[repl]
-costs_version = 2
-parser_version = 2
 
 [repl.analysis]
 passes = ["check_checker"]

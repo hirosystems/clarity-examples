@@ -41,14 +41,18 @@
 
 ;; Mint a new NFT.
 (define-public (mint (recipient principal))
-  (let
-    (
-      (token-id (+ (var-get last-token-id) u1)) ;; Create the new token ID by incrementing the last minted ID.
-    )
-    (asserts! (< (var-get last-token-id) COLLECTION-LIMIT) ERR-SOLD-OUT) ;; Ensure the collection stays within the limit.
-    (asserts! (is-eq tx-sender CONTRACT-OWNER) ERR-OWNER-ONLY) ;; Only the contract owner can mint.
-    (try! (nft-mint? Your-NFT-Name token-id recipient)) ;; Mint the NFT and send it to the given recipient.
-    (var-set last-token-id token-id) ;; Update the last minted token ID.
-    (ok token-id) ;; Return a success status and the newly minted NFT ID.
+  ;; Create the new token ID by incrementing the last minted ID.
+  (let ((token-id (+ (var-get last-token-id) u1)))
+    ;; Ensure the collection stays within the limit.
+    (asserts! (< (var-get last-token-id) COLLECTION-LIMIT) ERR-SOLD-OUT)
+    ;; Only the contract owner can mint.
+    (asserts! (is-eq tx-sender CONTRACT-OWNER) ERR-OWNER-ONLY)
+    ;; Mint the NFT and send it to the given recipient.
+    (try! (nft-mint? Your-NFT-Name token-id recipient))
+
+    ;; Update the last minted token ID.
+    (var-set last-token-id token-id)
+    ;; Return a success status and the newly minted NFT ID.
+    (ok token-id)
   )
 )

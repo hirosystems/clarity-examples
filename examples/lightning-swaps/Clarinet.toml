@@ -1,15 +1,16 @@
 [project]
-name = 'lightning-swaps'
-description = ''
+name = "lightning-swaps"
+description = "A submarine swap implementation to provide a fast, private way of swapping Lightning Network Bitcoin for Stacks and vice versa."
 authors = []
 telemetry = true
-cache_dir = './.cache'
-requirements = []
+cache_dir = "./.cache"
+
 [contracts.stxswap_v10]
-path = 'contracts/stxswap_v10.clar'
+path = "contracts/stxswap_v10.clar"
 clarity_version = 1
+
 [repl.analysis]
-passes = ['check_checker']
+passes = ["check_checker"]
 
 [repl.analysis.check_checker]
 strict = false

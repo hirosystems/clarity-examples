@@ -1,1 +1,0 @@
-A real-world use case demonstrates the proof of transfer of New York City Coins from one account to another.

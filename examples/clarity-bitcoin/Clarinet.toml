@@ -1,15 +1,16 @@
 [project]
-name = 'clarity-bitcoin'
-description = ''
+name = "clarity-bitcoin"
+description = "Clarity functions that help with reading and verifying transactions on the Bitcoin blockchain."
 authors = []
 telemetry = true
-cache_dir = './.cache'
-requirements = []
+cache_dir = "./.cache"
+
 [contracts.clarity-bitcoin]
-path = 'contracts/clarity-bitcoin.clar'
+path = "contracts/clarity-bitcoin.clar"
 clarity_version = 1
+
 [repl.analysis]
-passes = ['check_checker']
+passes = ["check_checker"]
 
 [repl.analysis.check_checker]
 strict = false

@@ -1,18 +1,20 @@
 [project]
-name = 'clarity-examples-ordyswap'
-description = ''
+name = "clarity-examples-ordyswap"
+description = "A contract implementing a trustless peer-to-peer atomic swap between Bitcoin Ordinals and STX."
 authors = []
-telemetry = false
-cache_dir = './.cache'
+telemetry = true
+cache_dir = "./.cache"
 
 [[project.requirements]]
-contract_id = 'SP1WN90HKT0E1FWCJT9JFPMC8YP7XGBGFNZGHRVZX.clarity-bitcoin'
+contract_id = "SP1WN90HKT0E1FWCJT9JFPMC8YP7XGBGFNZGHRVZX.clarity-bitcoin"
+
 [contracts.ord-swap]
-path = 'contracts/ord-swap.clar'
+path = "contracts/ord-swap.clar"
 clarity_version = 1
 epoch = 2.0
+
 [repl.analysis]
-passes = ['check_checker']
+passes = ["check_checker"]
 
 [repl.analysis.check_checker]
 strict = false

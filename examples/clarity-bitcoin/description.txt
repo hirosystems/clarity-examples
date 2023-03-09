@@ -1,1 +1,0 @@
-Clarity functions that help with reading and verifying transactions on the Bitcoin blockchain.

@@ -1,1 +1,0 @@
-A beginner smart contract with examples of commonly used Clarity expressions and data structures.

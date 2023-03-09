@@ -1,20 +1,21 @@
 [project]
-name = 'nft-marketplace'
-description = ''
+name = "nft-marketplace"
+description = "A simple NFT marketplace implementation to list NFTs for sales."
 authors = []
 telemetry = true
-cache_dir = './.cache'
+cache_dir = "./.cache"
 
 [[project.requirements]]
-contract_id = 'SP2PABAF9FTAJYNFZH93XENAJ8FVY99RRM50D2JG9.nft-trait'
-
+contract_id = "SP2PABAF9FTAJYNFZH93XENAJ8FVY99RRM50D2JG9.nft-trait"
 [[project.requirements]]
-contract_id = 'SP3FBR2AGK5H9QBDH3EEN6DF8EK8JY7RX8QJ5SVTE.sip-010-trait-ft-standard'
+contract_id = "SP3FBR2AGK5H9QBDH3EEN6DF8EK8JY7RX8QJ5SVTE.sip-010-trait-ft-standard"
+
 [contracts.nft-marketplace]
-path = 'contracts/nft-marketplace.clar'
+path = "contracts/nft-marketplace.clar"
 clarity_version = 1
+
 [repl.analysis]
-passes = ['check_checker']
+passes = ["check_checker"]
 
 [repl.analysis.check_checker]
 strict = false

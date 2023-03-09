@@ -1,1 +1,55 @@
-{"clarinetVersion":"1.0.5","examples":[{"title":"city-coin","description":"Complete implementation of the New York City coin.","path":"examples/city-coin"},{"title":"clarity-bitcoin","description":"Utilities for reading & verifying transactions on the Bitcoin blockchain.","path":"examples/clarity-bitcoin"},{"title":"counter","description":"An on-chain counter that stores and increments a count for each individual.","path":"examples/counter"},{"title":"fungible-token","description":"An implementation of fungible tokens in Clarity.","path":"examples/fungible-token"},{"title":"hello-world","description":"A beginner smart contract with examples of commonly used Clarity expressions and data structures.","path":"examples/hello-world"},{"title":"lightning-swaps","description":"Fraud-proof swaps using Lightning.","path":"examples/lightning-swaps"},{"title":"nft-marketplace","description":"A simple NFT marketplace that allows users to list NFTs for sale.","path":"examples/nft-marketplace"},{"title":"non-fungible-token","description":"An implementation of non-fungible tokens in Clarity.","path":"examples/non-fungible-token"}]}
+{
+  "clarinetVersion": "1.4.2",
+  "examples": [
+    {
+      "title": "blank-project",
+      "description": "A blank project to start from scratch.",
+      "path": "examples/blank-project"
+    },
+    {
+      "title": "citycoin",
+      "description": "A real-world use case demonstrates the proof of transfer of New York City Coins from one account to another.",
+      "path": "examples/citycoin"
+    },
+    {
+      "title": "clarity-bitcoin",
+      "description": "Clarity functions that help with reading and verifying transactions on the Bitcoin blockchain.",
+      "path": "examples/clarity-bitcoin"
+    },
+    {
+      "title": "counter",
+      "description": "An on-chain counter function in Clarity that stores and increments a count on every transaction.",
+      "path": "examples/counter"
+    },
+    {
+      "title": "fungible-token",
+      "description": "An implementation of SIP010-compliant fungible token in Clarity.",
+      "path": "examples/fungible-token"
+    },
+    {
+      "title": "hello-world",
+      "description": "A beginner smart contract with examples of commonly used Clarity expressions and data structures.",
+      "path": "examples/hello-world"
+    },
+    {
+      "title": "lightning-swaps",
+      "description": "A submarine swap implementation to provide a fast, private way of swapping Lightning Network Bitcoin for Stacks and vice versa.",
+      "path": "examples/lightning-swaps"
+    },
+    {
+      "title": "nft-marketplace",
+      "description": "A simple NFT marketplace implementation to list NFTs for sales.",
+      "path": "examples/nft-marketplace"
+    },
+    {
+      "title": "non-fungible-token-real",
+      "description": "An implementation of SIP009-compliant non-fungible tokens in Clarity.",
+      "path": "examples/non-fungible-token"
+    },
+    {
+      "title": "clarity-examples-ordyswap",
+      "description": "A contract implementing a trustless peer-to-peer atomic swap between Bitcoin Ordinals and STX.",
+      "path": "examples/ordyswap"
+    }
+  ]
+}
