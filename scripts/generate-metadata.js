@@ -11,7 +11,8 @@ const fs = require("fs");
 const cp = require("child_process");
 const path = require("path");
 
-const PROJECTS_ROOT = "examples/";
+const PROJECTS_DIR = "examples/";
+const PROJECTS_ROOT = "../" + PROJECTS_DIR;
 const METADATA_FILE = "metadata.json";
 
 // Get the current Clarinet version
@@ -47,7 +48,7 @@ cp.execFile("./print-clarinet-version.sh", (error, stdout, stderr) => {
       return {
         title: parsedManifest.name,
         description: parsedManifest.description,
-        path: path.join(PROJECTS_ROOT, projectDir),
+        path: path.join(PROJECTS_DIR, projectDir),
       };
     });
 
