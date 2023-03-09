@@ -1,5 +1,5 @@
 [project]
-name = "non-fungible-token-real"
+name = "non-fungible-token"
 authors = []
 description = "An implementation of SIP009-compliant non-fungible tokens in Clarity."
 telemetry = true

@@ -1,5 +1,5 @@
 [project]
-name = "clarity-examples-ordyswap"
+name = "ordyswap"
 description = "A contract implementing a trustless peer-to-peer atomic swap between Bitcoin Ordinals and STX."
 authors = []
 telemetry = true
