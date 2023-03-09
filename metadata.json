@@ -47,7 +47,7 @@
       "path": "examples/non-fungible-token"
     },
     {
-      "title": "clarity-examples-ordyswap",
+      "title": "ordyswap",
       "description": "A contract implementing a trustless peer-to-peer atomic swap between Bitcoin Ordinals and STX.",
       "path": "examples/ordyswap"
     }
