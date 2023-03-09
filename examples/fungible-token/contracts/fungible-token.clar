@@ -51,7 +51,12 @@
 
 ;; Transfer tokens to a recipient.
 ;; Sender must be the same as the caller to prevent principals from transferring tokens they do not own.
-(define-public (transfer (amount uint) (sender principal) (recipient principal) (memo (optional (buff 34))))
+(define-public (transfer
+  (amount uint)
+  (sender principal)
+  (recipient principal)
+  (memo (optional (buff 34)))
+)
   (begin
     (asserts! (is-eq tx-sender sender) ERR_NOT_TOKEN_OWNER)
     (try! (ft-transfer? clarity-coin amount sender recipient))

@@ -5,7 +5,7 @@
 (define-public (say-hi)
   (ok "Hello World")
 )
-    
+
 ;; A function that returns an input number
 (define-public (echo-number (val int))
   (ok val)
@@ -48,9 +48,9 @@
 
 ;; Tuple data structure
 {
-    id: u5, ;; a uint
-    username: "ClarityIsAwesome", ;; an ASCI string
-    address: 'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE ;; and a principal
+  id: u5, ;; a uint
+  username: "ClarityIsAwesome", ;; an ASCI string
+  address: 'ST1HTBVD3JG9C05J7HBJTHGR0GGW7KXW28M5JS8QE ;; and a principal
 }
 
 ;; Map data structure
