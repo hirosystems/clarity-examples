@@ -20,8 +20,8 @@ You can manually test your contract in the Clarinet console. After entering the 
 
 You can programmatically test your contracts with [unit tests](https://docs.hiro.so/clarinet/how-to-guides/how-to-test-contract). See the `tests/` folder where you will find a unit test that ensures the `claim` function returns the proper response and that the read-only functions work as expected.
 
-## Links and Resources
+## Resources and Inspiration
 
 - One of the most successful NFT collections in Stacks is [Megapont Ape Club](https://gamma.io/collections/megapont-ape-club). You can view [the source code of their NFT contract](https://explorer.stacks.co/txid/SP3D6PV2ACBPEKYJTCMH7HEN02KP87QSP8KTEH335.megapont-ape-club-nft?chain=mainnet)
 - The Crash Punks project had an upgrade from v1 to v2, which this [NFT contract implements](https://explorer.stacks.co/txid/SP3QSAJQ4EA8WXEDSRRKMZZ29NH91VZ6C5X88FGZQ.crashpunks-v2?chain=mainnet)
-- An ambitious use case for NFTs is Mechanism.io's BNSx project, where pre-SIP-009 era BNS names can be wrapped into a SIP-009 NFT. You can learn more about the [BNSx project](https://github.com/mechanismHQ/bns-x) and see the source code here
+- An ambitious use case for NFTs is Mechanism.io's BNSx project, where pre-SIP-009 era BNS names can be wrapped into a SIP-009 NFT. You can learn more about the [BNSx project](https://github.com/mechanismHQ/bns-x) and look at the [source code here.](https://github.com/mechanismHQ/bns-x/blob/main/contracts/contracts/core/name-registry.clar)
