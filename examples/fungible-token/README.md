@@ -2,11 +2,11 @@
 
 Fungible tokens are digital assets that can be sent, received, combined, and divided.
 
-This contract implements a basic fungible token that conforms to the SIP-010 FT standard. Be sure to chance the placeholder name of the collection, as well as any other details.
+This contract implements a basic fungible token that conforms to the SIP-010 FT standard. Be sure to change the placeholder name of the collection, as well as any other variables or references to your new project.
 
 ## SIP-010 Standard Trait Definition for Fungible Tokens
 
-In [Stacks Improvement Proposal 010 (SIP-010)](https://github.com/stacksgov/sips/blob/main/sips/sip-010/sip-010-fungible-token-standard.md), the Stacks community proposed and approved a standard set of functions that every fungible token contract is to implement to qualify as a compliant fungible token on the Stacks chain. This creates uniformity and predictability in contract interactions, as well as enables a handful of built-in Clarity functions accessible only to SIP-010 contracts (such as `ft-transfer?`, etc.)
+In [Stacks Improvement Proposal 010 (SIP-010)](https://github.com/stacksgov/sips/blob/main/sips/sip-010/sip-010-fungible-token-standard.md), the Stacks community proposed and approved a standard set of functions that every fungible token contract is to implement to qualify as a compliant fungible token on the Stacks chain. This creates uniformity and predictability in contract interactions, as well as enables a handful of built-in Clarity functions accessible only to SIP-010 contracts (such as `ft-transfer?`, etc.).
 
 Those functions are specified in the SIP and must be implemented in each contract. Trait conformance is then asserted with an `impl-trait` declaration at the top of the contract pointing to the relevant trait reference published on the Stacks mainnet.
 
@@ -18,9 +18,9 @@ You can manually test your contract in the Clarinet console. After entering the 
 `(contract-call? .ft mint u100)`
 `(contract-call? .ft get-balance tx-sender)`
 
-You can programmatically test your contracts with [unit tests](https://docs.hiro.so/clarinet/how-to-guides/how-to-test-contract). See the `tests/` folder where you will find a unit test that ensures the `mint` function returns the proper response and that the read-only functions work as expected.
+You can programmatically test your contracts with [unit tests](https://docs.hiro.so/clarinet/how-to-guides/how-to-test-contract). See the `tests/` folder where you will find unit tests that ensures the `mint` function returns the proper response and that the read-only functions work as expected.
 
-## Links and Resources
+## Resources and Inspiration
 
 - There are lots of ways to create an initial distribution of tokens
   - [Friedgar's SLIME token employs an airdrop model](https://github.com/boomcrypto/clarity-deployed-contracts/blob/main/contracts/SP125J1ADVYWGWB9NQRCVGKYAG73R17ZNMV17XEJ7/slime.clar)
