@@ -42,7 +42,7 @@
       "path": "examples/nft-marketplace"
     },
     {
-      "title": "non-fungible-token-real",
+      "title": "non-fungible-token",
       "description": "An implementation of SIP009-compliant non-fungible tokens in Clarity.",
       "path": "examples/non-fungible-token"
     },
