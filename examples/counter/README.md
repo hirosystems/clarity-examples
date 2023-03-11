@@ -4,6 +4,8 @@ Demonstrates how to use and interact with "variables" in Clarity by incrementing
 
 ## Know your Contract
 
+The [counter.clar](/examples/counter/contracts/counter.clar) contract includes the following functionality.
+
 + `count-up` function increments the designated "32-bit unsigned integer" for the account holder, and that value is wrapped inside the `counters`, which is declared as a `map` data structure in Clarity
 + `get-count (...)` function retrieves the latest count from the `counters` map for a given account holder
 

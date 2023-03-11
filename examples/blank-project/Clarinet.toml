@@ -1,6 +1,6 @@
 [project]
 name = "blank-project"
-description = "A beginner smart contract with examples of commonly used Clarity expressions and data structures"
+description = "A blank project confirms to Clarinet-compliant project structure"
 authors = []
 telemetry = true
 cache_dir = "./.cache"

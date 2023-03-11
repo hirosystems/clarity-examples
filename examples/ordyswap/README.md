@@ -6,6 +6,8 @@ Demonstrates a trustless atomic swaps between Ordinals and Stacks.
 
 For more details about this protocol in Stacks, please refer to [Mechanism's Ordyswap](https://github.com/mechanismHQ/ordyswap) project.
 
+The [ord-swap.clar](/examples/ordyswap/contracts/ord-swap.clar) contract includes the following functionality.
+
 + `validate-offer-transfer` function validates the transfer of an Ordinal
 + `finalize-offer` finalizes the transfer offer
 + `cancel-offer` function can be used to cancel a pending offer

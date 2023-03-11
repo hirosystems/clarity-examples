@@ -4,6 +4,8 @@ Demonstartes a minimalistic NFT marketplace that allows users to list NFTs for s
 
 ## Know your Contract
 
+The [nft-marketplace.clar](/examples/nft-marketplace/contracts/nft-marketplace.clar) contract includes the following functionality.
+
 + `list-asset` lists an asset along with its contract
 + `transfer-nft` transfers an NFT asset from a sender to a given recipient
 + `transfer-ft` transfers fungible tokens from a sender to a given recipient

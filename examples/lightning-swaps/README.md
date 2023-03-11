@@ -8,6 +8,8 @@ In Stacks, the [LNSwap](https://www.lnswap.org/) protocol provides submarine swa
 
 For more details about this production running protocol in Stacks, please refer to [LNSwap's GitHub](https://github.com/LNSwap/lnstxbridge) and the [learning guide](https://www.lnswap.org/learn/how-lnswap-bitcoin-stacks-swaps-work).
 
+The [stxswap_v10.clar](/examples/lightning-swaps/contracts/stxswap_v10.clar) contract includes the following functionality.
+
 + `lockStx` locks the STX for a swap in the contract
 + `claimStx` claims the STX locked in a contract
 + `refundStx` refunds the STX locked in a contract

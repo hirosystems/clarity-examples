@@ -4,6 +4,8 @@ The primary intent of this example is to demonstrate printing "Hello World" in C
 
 ## Know your Contract
 
+Review the [hello-world.clar](/examples/hello-world/contracts/hello-world.clar) contract.
+
 We want developers to familiarize themselves with these basic concepts. You can interact with this sample by commenting/uncommenting respective functions, altering the behavior, and running them through Clarinet or unit tests.
 
 ## Test your Contract
