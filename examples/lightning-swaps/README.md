@@ -2,7 +2,7 @@
 
 Submarine swaps are common use cases in a blockchain. 
 
-In Stacks, the [LNSwap](https://www.lnswap.org/) protocol provides Submarine swaps between Stacks and Bitcoin, including interoperability with on-chain and [Lightning Network](https://lightning.network/).
+In Stacks, the [LNSwap](https://www.lnswap.org/) protocol provides submarine swaps between Stacks and Bitcoin, including interoperability with on-chain and [Lightning Network](https://lightning.network/).
 
 ## Know your Contract
 

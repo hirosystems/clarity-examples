@@ -1,6 +1,6 @@
 [project]
 name = "hello-world"
-description = "A beginner smart contract with examples of commonly used Clarity expressions and data structures."
+description = "A beginner smart contract with examples of commonly used Clarity expressions and data structures"
 authors = []
 telemetry = true
 cache_dir = './.cache'

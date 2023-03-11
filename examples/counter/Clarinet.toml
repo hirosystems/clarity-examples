@@ -1,6 +1,6 @@
 [project]
 name = "counter"
-description = "An on-chain counter function in Clarity that stores and increments a count on every transaction."
+description = "Demonstrates how to use and interact with variables in Clarity by incrementing a 32-bit unsigned integer"
 authors = []
 telemetry = true
 cache_dir = './.cache'

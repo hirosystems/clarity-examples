@@ -17,8 +17,8 @@ Furthermore, [Hiro Platform](https://platform.hiro.so/) allows developers to dis
 |[fungible-token](/examples/fungible-token/)            | Demonstrates a basic fungible token that conforms to the SIP-010 FT standard       |
 |[non-fungible-token](/examples/non-fungible-token/)    | Demonstrates a basic NFT collection that conforms to the SIP-009 NFT standard      |
 |[nft-marketplace](/examples/nft-marketplace/)          | Demonstartes a minimalistic NFT marketplace that allows users to list NFT for sale |
-|[lightning-swaps](/examples/lightning-swaps/)          | Demonstrates LNSwap's Submarine Swaps between assets on Stacks <-> Bitcoin         |
-|[ordyswap](/examples/ordyswap/)                        | Demonstrates a trustless atomic swaps between Ordinals and Stacks (STX)            |
+|[lightning-swaps](/examples/lightning-swaps/)          | Demonstrates LNSwap's submarine Swaps between Stacks and Bitcoin                   |
+|[ordyswap](/examples/ordyswap/)                        | Demonstrates a trustless atomic swaps between Ordinals and Stacks                  |
 
 ## Logistics
 

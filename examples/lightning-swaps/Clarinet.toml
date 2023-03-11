@@ -1,6 +1,6 @@
 [project]
 name = "lightning-swaps"
-description = "A submarine swap implementation to provide a fast, private way of swapping Lightning Network Bitcoin for Stacks and vice versa."
+description = "Demonstrates LNSwap's submarine Swaps between Stacks and Bitcoin"
 authors = []
 telemetry = true
 cache_dir = "./.cache"

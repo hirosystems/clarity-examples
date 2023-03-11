@@ -1,7 +1,7 @@
 [project]
 name = "non-fungible-token"
 authors = []
-description = "An implementation of SIP009-compliant non-fungible tokens in Clarity."
+description = "Demonstrates a basic NFT collection that conforms to the SIP-009 NFT standard"
 telemetry = true
 cache_dir = "./.cache"
 

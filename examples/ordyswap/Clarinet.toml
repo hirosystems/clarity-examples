@@ -1,6 +1,6 @@
 [project]
 name = "ordyswap"
-description = "A contract implementing a trustless peer-to-peer atomic swap between Bitcoin Ordinals and STX."
+description = "Demonstrates a trustless atomic swaps between Ordinals and Stacks"
 authors = []
 telemetry = true
 cache_dir = "./.cache"

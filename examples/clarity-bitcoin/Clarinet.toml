@@ -1,6 +1,6 @@
 [project]
 name = "clarity-bitcoin"
-description = "Clarity functions that help with reading and verifying transactions on the Bitcoin blockchain."
+description = "Demonstrates how to parse Bitcoin transactions and block headers, and to verify Bitcoin transactions"
 authors = []
 telemetry = true
 cache_dir = "./.cache"

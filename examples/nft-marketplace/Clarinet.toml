@@ -1,6 +1,6 @@
 [project]
 name = "nft-marketplace"
-description = "A simple NFT marketplace implementation to list NFTs for sales."
+description = "Demonstartes a minimalistic NFT marketplace that allows users to list NFT for sale"
 authors = []
 telemetry = true
 cache_dir = "./.cache"
