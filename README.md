@@ -11,14 +11,14 @@ Furthermore, [Hiro Platform](https://platform.hiro.so/) allows developers to dis
 | Clarity Example             | Description                                     |
 | --------------------------- | -------------------------------------------------------- |
 |[hello-world](/examples/hello-world/)                  | A beginner smart contract with examples of commonly used Clarity expressions and data structures                                     |
-|[blank-project](/examples/blank-project)               | A blank project confirms to [Clarinet-compliant](https://docs.hiro.so/clarinet/how-to-guides/how-to-create-new-project) project structure |
+|[blank-project](/examples/blank-project)               | A blank project conforms to [Clarinet-compliant](https://docs.hiro.so/clarinet/how-to-guides/how-to-create-new-project) project structure |
 |[counter](/examples/counter/)                     | Demonstrates how to use and interact with "variables" in Clarity by incrementing a 32-bit unsigned integer                  |
 |[clarity-bitcoin](/examples/clarity-bitcoin/)          | Demonstrates how to parse Bitcoin transactions and block headers, and to verify Bitcoin transactions                                 |
 |[fungible-token](/examples/fungible-token/)            | Demonstrates a basic fungible token that conforms to the SIP-010 FT standard       |
 |[non-fungible-token](/examples/non-fungible-token/)    | Demonstrates a basic NFT collection that conforms to the SIP-009 NFT standard      |
-|[nft-marketplace](/examples/nft-marketplace/)          | Demonstartes a minimalistic NFT marketplace that allows users to list NFT for sale |
-|[lightning-swaps](/examples/lightning-swaps/)          | Demonstrates LNSwap's submarine Swaps between Stacks and Bitcoin                   |
-|[ordyswap](/examples/ordyswap/)                        | Demonstrates a trustless atomic swaps between Ordinals and Stacks                  |
+|[nft-marketplace](/examples/nft-marketplace/)          | Demonstrates a minimalistic NFT marketplace that allows users to list NFT for sale |
+|[lightning-swaps](/examples/lightning-swaps/)          | Demonstrates LNSwap's submarine swaps between Stacks and Bitcoin                   |
+|[ordyswap](/examples/ordyswap/)                        | Demonstrates trustless atomic swaps between Ordinals and Stacks                    |
 
 ## Logistics
 

@@ -1,15 +1,16 @@
 # A Blank Project
 
-This blank project confirms to [Clarinet-compliant](https://docs.hiro.so/clarinet/how-to-guides/how-to-create-new-project) project structure. 
+This blank project conforms to [Clarinet-compliant](https://docs.hiro.so/clarinet/how-to-guides/how-to-create-new-project) project structure. 
 
 ## Build your Contract
 
 You can start your journey by reviewing the project structure, particularly the [Clarinet.toml](/examples/blank-project/Clarinet.toml). 
 
-+ Navigate to `/contracts` folder and create your Clarity contracts
++ Navigate to `/contracts` folder and create your Clarity contracts. Detailed instructions at [Add new Contract](https://docs.hiro.so/clarinet/how-to-guides/how-to-add-contract)
 + Navigate to `/tests` to build the test harness
 
-You can review detailed instructions at [Add new Contract](https://docs.hiro.so/clarinet/how-to-guides/how-to-add-contract).
+> **NOTE**: To use this example with Clarinet inside [Hiro Platform](https://platform.hiro.so), you can open the terminal session inside VS code by navigating to File -> View -> Terminal.
+
 
 ## Test your Contract
 

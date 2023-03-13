@@ -1,6 +1,6 @@
 [project]
 name = "blank-project"
-description = "A blank project confirms to Clarinet-compliant project structure"
+description = "A blank project conforms to Clarinet-compliant project structure"
 authors = []
 telemetry = true
 cache_dir = "./.cache"

@@ -1,6 +1,6 @@
 [project]
 name = "lightning-swaps"
-description = "Demonstrates LNSwap's submarine Swaps between Stacks and Bitcoin"
+description = "Demonstrates LNSwap's submarine swaps between Stacks and Bitcoin"
 authors = []
 telemetry = true
 cache_dir = "./.cache"

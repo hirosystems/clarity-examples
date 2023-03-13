@@ -1,6 +1,6 @@
 [project]
 name = "ordyswap"
-description = "Demonstrates a trustless atomic swaps between Ordinals and Stacks"
+description = "Demonstrates trustless atomic swaps between Ordinals and Stacks"
 authors = []
 telemetry = true
 cache_dir = "./.cache"
