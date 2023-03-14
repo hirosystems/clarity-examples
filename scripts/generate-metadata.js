@@ -12,14 +12,13 @@ const cp = require("child_process");
 const path = require("path");
 
 const PROJECTS_DIR = "examples/";
-const PROJECTS_ROOT = "../" + PROJECTS_DIR;
 const METADATA_FILE = "metadata.json";
 
 // Get the current Clarinet version
-cp.execFile("./print-clarinet-version.sh", (error, stdout, stderr) => {
+cp.execFile("scripts/print-clarinet-version.sh", (error, stdout, stderr) => {
   const clarinetVersionOutput = stdout;
   const matches = clarinetVersionOutput.match(/\d+\.\d+\.\d+/);
-  if (matches.length === 0) {
+  if (!matches || matches?.length === 0) {
     throw new Error(
       `Could not parse current clarinet cli version, got: ${clarinetVersionOutput}`
     );
@@ -27,14 +26,10 @@ cp.execFile("./print-clarinet-version.sh", (error, stdout, stderr) => {
   const clarinetVersion = matches[0];
 
   // Put all the example names and descriptions in JSON
-  fs.readdir(PROJECTS_ROOT, (err, projects) => {
+  fs.readdir(PROJECTS_DIR, (err, projects) => {
     if (err) throw err;
     const examples = projects.map((projectDir) => {
-      const manifestPath = path.join(
-        PROJECTS_ROOT,
-        projectDir,
-        "Clarinet.toml"
-      );
+      const manifestPath = path.join(PROJECTS_DIR, projectDir, "Clarinet.toml");
 
       const manifestFile = fs.readFileSync(manifestPath, "utf8");
 

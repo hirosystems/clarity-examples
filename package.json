@@ -1,0 +1,27 @@
+{
+  "name": "clarity-examples",
+  "version": "1.0.0",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "build": "node scripts/generate-metadata.js && ./scripts/create-zips.sh",
+    "precommit": "npm run build && git add metadata.json && git add zips/"
+  },
+  "pre-commit": [
+    "precommit"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hirosystems/clarity-examples.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hirosystems/clarity-examples/issues"
+  },
+  "homepage": "https://github.com/hirosystems/clarity-examples#readme",
+  "devDependencies": {
+    "pre-commit": "1.2.2"
+  }
+}
