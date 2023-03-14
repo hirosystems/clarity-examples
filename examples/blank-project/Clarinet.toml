@@ -1,12 +1,12 @@
 [project]
 name = "blank-project"
-description = "A blank project to start from scratch."
+description = "A blank project conforms to Clarinet-compliant project structure"
 authors = []
 telemetry = true
 cache_dir = "./.cache"
 
-# [contracts.counter]
-# path = "contracts/counter.clar"
+# [contracts.CHANGE-THIS-TO-YOUR-CONTRACT-NAME]
+# path = "contracts/CHANGE-THIS-TO-YOUR-CONTRACT-NAME.clar"
 
 [repl.analysis]
 passes = ["check_checker"]

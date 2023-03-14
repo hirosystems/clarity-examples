@@ -1,6 +1,6 @@
 [project]
 name = "fungible-token"
-description = "An implementation of SIP010-compliant fungible token in Clarity."
+description = "Demonstrates a basic fungible token that conforms to the SIP-010 FT standard"
 authors = []
 telemetry = true
 cache_dir = "./.cache"

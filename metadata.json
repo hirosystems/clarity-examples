@@ -3,52 +3,47 @@
   "examples": [
     {
       "title": "blank-project",
-      "description": "A blank project to start from scratch.",
+      "description": "A blank project conforms to Clarinet-compliant project structure",
       "path": "examples/blank-project"
     },
     {
-      "title": "citycoin",
-      "description": "A real-world use case demonstrates the proof of transfer of New York City Coins from one account to another.",
-      "path": "examples/citycoin"
-    },
-    {
       "title": "clarity-bitcoin",
-      "description": "Clarity functions that help with reading and verifying transactions on the Bitcoin blockchain.",
+      "description": "Demonstrates how to parse Bitcoin transactions and block headers, and to verify Bitcoin transactions",
       "path": "examples/clarity-bitcoin"
     },
     {
       "title": "counter",
-      "description": "An on-chain counter function in Clarity that stores and increments a count on every transaction.",
+      "description": "Demonstrates how to use and interact with variables in Clarity by incrementing a 32-bit unsigned integer",
       "path": "examples/counter"
     },
     {
       "title": "fungible-token",
-      "description": "An implementation of SIP010-compliant fungible token in Clarity.",
+      "description": "Demonstrates a basic fungible token that conforms to the SIP-010 FT standard",
       "path": "examples/fungible-token"
     },
     {
       "title": "hello-world",
-      "description": "A beginner smart contract with examples of commonly used Clarity expressions and data structures.",
+      "description": "A beginner smart contract with examples of commonly used Clarity expressions and data structures",
       "path": "examples/hello-world"
     },
     {
       "title": "lightning-swaps",
-      "description": "A submarine swap implementation to provide a fast, private way of swapping Lightning Network Bitcoin for Stacks and vice versa.",
+      "description": "Demonstrates LNSwap's submarine swaps between Stacks and Bitcoin",
       "path": "examples/lightning-swaps"
     },
     {
       "title": "nft-marketplace",
-      "description": "A simple NFT marketplace implementation to list NFTs for sales.",
+      "description": "Demonstrates a minimalistic NFT marketplace that allows users to list NFT for sale",
       "path": "examples/nft-marketplace"
     },
     {
       "title": "non-fungible-token",
-      "description": "An implementation of SIP009-compliant non-fungible tokens in Clarity.",
+      "description": "Demonstrates a basic NFT collection that conforms to the SIP-009 NFT standard",
       "path": "examples/non-fungible-token"
     },
     {
       "title": "ordyswap",
-      "description": "A contract implementing a trustless peer-to-peer atomic swap between Bitcoin Ordinals and STX.",
+      "description": "Demonstrates trustless atomic swaps between Ordinals and Stacks",
       "path": "examples/ordyswap"
     }
   ]
