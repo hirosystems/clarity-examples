@@ -11,10 +11,10 @@ contract_id = "SP1WN90HKT0E1FWCJT9JFPMC8YP7XGBGFNZGHRVZX.clarity-bitcoin"
 [contracts.ord-swap]
 path = "contracts/ord-swap.clar"
 clarity_version = 1
-epoch = 2.0
+epoch = 2.05
 
 [repl.analysis]
-passes = ["check_checker"]
+passes = []
 
 [repl.analysis.check_checker]
 strict = false

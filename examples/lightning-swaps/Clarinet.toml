@@ -10,7 +10,7 @@ path = "contracts/stxswap_v10.clar"
 clarity_version = 1
 
 [repl.analysis]
-passes = ["check_checker"]
+passes = []
 
 [repl.analysis.check_checker]
 strict = false

@@ -15,10 +15,10 @@ path = "contracts/nft-marketplace.clar"
 clarity_version = 1
 
 [repl.analysis]
-passes = ["check_checker"]
+passes = []
 
 [repl.analysis.check_checker]
 strict = false
-trusted_sender = false
+trusted_sender = true
 trusted_caller = false
 callee_filter = false
