@@ -64,6 +64,7 @@
   (memo (optional (buff 34)))
 )
   (begin
+    ;; #[filter(amount, recipient)]
     (asserts! (is-eq tx-sender sender) ERR_NOT_TOKEN_OWNER)
     (try! (ft-transfer? clarity-coin amount sender recipient))
     (match memo to-print (print to-print) 0x)

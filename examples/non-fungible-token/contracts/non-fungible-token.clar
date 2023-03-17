@@ -8,11 +8,12 @@
 (define-data-var last-token-id uint u0)
 
 ;; Define constants
-(define-constant CONTRACT-OWNER tx-sender)
-(define-constant COLLECTION-LIMIT u1000) ;; Limit to series of 1000
-(define-constant ERR-OWNER-ONLY (err u100))
-(define-constant ERR-NOT-TOKEN-OWNER (err u101))
-(define-constant ERR-SOLD-OUT (err u300))
+(define-constant CONTRACT_OWNER tx-sender)
+(define-constant COLLECTION_LIMIT u1000) ;; Limit to series of 1000
+
+(define-constant ERR_OWNER_ONLY (err u100))
+(define-constant ERR_NOT_TOKEN_OWNER (err u101))
+(define-constant ERR_SOLD_OUT (err u300))
 
 (define-data-var base-uri (string-ascii 80) "https://your.api.com/path/to/collection/{id}")
 
@@ -34,7 +35,8 @@
 ;; SIP-009 function: Transfer NFT token to another owner.
 (define-public (transfer (token-id uint) (sender principal) (recipient principal))
   (begin
-    (asserts! (is-eq tx-sender sender) ERR-NOT-TOKEN-OWNER)
+    ;; #[filter(sender)]
+    (asserts! (is-eq tx-sender sender) ERR_NOT_TOKEN_OWNER)
     (nft-transfer? Your-NFT-Name token-id sender recipient)
   )
 )
@@ -44,10 +46,10 @@
   ;; Create the new token ID by incrementing the last minted ID.
   (let ((token-id (+ (var-get last-token-id) u1)))
     ;; Ensure the collection stays within the limit.
-    (asserts! (< (var-get last-token-id) COLLECTION-LIMIT) ERR-SOLD-OUT)
+    (asserts! (< (var-get last-token-id) COLLECTION_LIMIT) ERR_SOLD_OUT)
     ;; Only the contract owner can mint.
-    (asserts! (is-eq tx-sender CONTRACT-OWNER) ERR-OWNER-ONLY)
-    ;; Mint the NFT and send it to the given recipient.
+    (asserts! (is-eq tx-sender CONTRACT_OWNER) ERR_OWNER_ONLY)
+    ;; Mint the NFT and send it to _he_given_recipient.
     (try! (nft-mint? Your-NFT-Name token-id recipient))
 
     ;; Update the last minted token ID.
