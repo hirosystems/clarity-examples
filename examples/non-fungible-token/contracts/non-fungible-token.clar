@@ -49,7 +49,7 @@
     (asserts! (< (var-get last-token-id) COLLECTION_LIMIT) ERR_SOLD_OUT)
     ;; Only the contract owner can mint.
     (asserts! (is-eq tx-sender CONTRACT_OWNER) ERR_OWNER_ONLY)
-    ;; Mint the NFT and send it to _he_given_recipient.
+    ;; Mint the NFT and send it to the given recipient.
     (try! (nft-mint? Your-NFT-Name token-id recipient))
 
     ;; Update the last minted token ID.
