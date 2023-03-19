@@ -1,6 +1,6 @@
 [project]
 name = "blank-project"
-description = "A blank project conforms to Clarinet-compliant project structure"
+description = "Create a project from scratch: Start from a blank scaffold for your next Clarity contract"
 authors = []
 telemetry = true
 cache_dir = "./.cache"
