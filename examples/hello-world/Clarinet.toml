@@ -7,6 +7,8 @@ cache_dir = './.cache'
 
 [contracts.hello-world]
 path = "contracts/hello-world.clar"
+clarity_version = 2
+epoch = 2.1
 
 [repl.analysis]
 passes = ["check_checker"]
