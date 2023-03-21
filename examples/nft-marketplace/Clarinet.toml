@@ -12,7 +12,8 @@ contract_id = "SP3FBR2AGK5H9QBDH3EEN6DF8EK8JY7RX8QJ5SVTE.sip-010-trait-ft-standa
 
 [contracts.nft-marketplace]
 path = "contracts/nft-marketplace.clar"
-clarity_version = 1
+clarity_version = 2
+epoch = 2.1
 
 [repl.analysis]
 passes = []

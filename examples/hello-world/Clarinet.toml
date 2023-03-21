@@ -5,7 +5,6 @@ authors = []
 telemetry = true
 cache_dir = './.cache'
 
-
 [contracts.hello-world]
 path = "contracts/hello-world.clar"
 

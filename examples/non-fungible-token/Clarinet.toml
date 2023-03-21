@@ -10,6 +10,8 @@ contract_id = "SP2PABAF9FTAJYNFZH93XENAJ8FVY99RRM50D2JG9.nft-trait"
 
 [contracts.non-fungible-token]
 path = "contracts/non-fungible-token.clar"
+clarity_version = 2
+epoch = 2.1
 
 [repl.analysis]
 passes = ["check_checker"]
