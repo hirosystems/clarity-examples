@@ -14,7 +14,7 @@ describe("test individual counters", () => {
       address1
     );
     console.log("countResponse", countResponse);
-    expect(countResponse.result).toStrictEqual(Cl.uint(0));
+    expect(countResponse.result).toBeUint(0);
   });
 
   it("increments the count for a user", () => {
@@ -34,7 +34,7 @@ describe("test individual counters", () => {
       [Cl.standardPrincipal(address1)],
       address1
     );
-    expect(updatedCountResponse.result).toStrictEqual(Cl.uint(1));
+    expect(updatedCountResponse.result).toBeUint(1);
   });
   it("increments the count for a user multiple times", () => {
     // Call the count-up function for address2 twice
@@ -61,7 +61,7 @@ describe("test individual counters", () => {
       [Cl.standardPrincipal(address2)],
       address1
     );
-    expect(updatedCountResponse.result).toStrictEqual(Cl.uint(2));
+    expect(updatedCountResponse.result).toBeUint(2);
   });
 
 });

@@ -14,7 +14,7 @@ const amount = 1000;
 const timelock = 5;
 
 describe("stxswap_v10 contract tests", () => {
-  it("ensures that user can lock and claim stx", async () => {
+  it("ensures that user can lock and claim stx" () => {
     // Lock STX
     const lockResult = await simnet.mineBlock([
       tx.callPublicFn(
