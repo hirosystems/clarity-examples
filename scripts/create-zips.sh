@@ -3,7 +3,8 @@
 cd examples
 
 for dir in */; do
-  zip -r "../zips/${dir%/}.zip" "$dir"
+  # Use the -x option to exclude node_modules
+  zip -r "../zips/${dir%/}.zip" "$dir" -x "*node_modules/*"
 done
 
 cd ..
