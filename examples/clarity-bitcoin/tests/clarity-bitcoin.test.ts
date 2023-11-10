@@ -1,4 +1,4 @@
-import { Cl, cvToJSON, deserializeCV } from "@stacks/transactions";
+import { Cl, ClarityType } from "@stacks/transactions";
 import { describe, expect, it } from "vitest";
 
 const contractName = "clarity-bitcoin";
