@@ -13,7 +13,7 @@ const amount = 1000;
 const timelock = 5;
 
 describe("stxswap_v10 contract tests", () => {
-  it("ensures that user can lock and claim stx", async () => {
+  it("ensures that user can lock and claim stx", () => {
     // Lock STX
     const lockResult = simnet.callPublicFn(
       contractName,
@@ -150,7 +150,7 @@ describe("stxswap_v10 contract tests", () => {
 
   it("ensures that user can't refund non-existent hash", () => {
     // Attempt to refund STX for a non-existent swap
-    const refundResult = callPublicFn(
+    const refundResult = simnet.callPublicFn(
       contractName,
       "refundStx",
       [Cl.bufferFromHex(preimageHash)],
@@ -160,7 +160,7 @@ describe("stxswap_v10 contract tests", () => {
     expect(refundResult.result).toBeErr(Cl.uint(1000));
   });
 
-  it("ensures that user can't claim after refund", async () => {
+  it("ensures that user can't claim after refund", () => {
     // Lock STX
     simnet.callPublicFn(
       contractName,
