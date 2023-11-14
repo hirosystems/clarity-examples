@@ -13,7 +13,6 @@ describe("test individual counters", () => {
       [Cl.standardPrincipal(address2)],
       address1
     );
-    console.log("countResponse", countResponse);
     expect(countResponse.result).toBeUint(0);
   });
 
@@ -24,7 +23,6 @@ describe("test individual counters", () => {
       [],
       address1
     );
-    console.log("incrementResponse", incrementResponse);
     expect(incrementResponse.result).toBeOk(Cl.bool(true));
 
     // Retrieve the updated count for address1
