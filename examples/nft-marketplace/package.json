@@ -1,0 +1,21 @@
+{
+  "name": "nft-market-place",
+  "version": "1.0.0",
+  "description": "nft market place smart contract example",
+  "scripts": {
+    "test": "vitest run -- --manifest-path ./Clarinet.toml",
+    "test:reports": "vitest run -- --coverage --costs",
+    "test:watch": "chokidar \"unit-tests/**/*.ts\" \"contracts/**/*.clar\" -c \"npm t\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hirosystems/clarinet-sdk": "^1.0.4",
+    "@stacks/transactions": "^6.8.1",
+    "chokidar-cli": "^3.0.0",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.9",
+    "vitest": "^0.34.4",
+    "vitest-environment-clarinet": "^1.0.2"
+  }
+}
