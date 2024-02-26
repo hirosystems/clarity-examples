@@ -60,4 +60,20 @@ describe("test fungible token contract", () => {
     );
     expect(balanceResponse.result).toBeOk(Cl.uint(42));
   });
+
+  it("transfers more tokens from wallet_2 than wallet_2 owns to wallet_1", () => {
+    const block = simnet.callPublicFn(
+      "fungible-token",
+      "transfer",
+      [
+        Cl.uint(42 * 42),
+        Cl.standardPrincipal(wallet2),
+        Cl.standardPrincipal(wallet1),
+        Cl.none(),
+      ],
+      wallet2
+    );
+
+    expect(block.result).toBeErr(Cl.uint(1));
+  });
 });
