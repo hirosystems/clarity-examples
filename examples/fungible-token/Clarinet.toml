@@ -13,6 +13,11 @@ path = "contracts/fungible-token.clar"
 clarity_version = 2
 epoch = 2.4
 
+[contracts.defi]
+path = 'contracts/extern/defi.clar'
+clarity_version = 2
+epoch = 2.4
+
 [repl.analysis]
 passes = ["check_checker"]
 

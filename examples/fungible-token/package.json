@@ -1,6 +1,6 @@
 {
   "name": "fungible-token",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "fungible token smart contract example",
   "scripts": {
     "test": "vitest run -- --manifest-path ./Clarinet.toml",
@@ -10,12 +10,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@hirosystems/clarinet-sdk": "^1.0.4",
-    "@stacks/transactions": "^6.8.1",
+    "@hirosystems/clarinet-sdk": "^1.3.0",
+    "@stacks/transactions": "^6.11.3",
     "chokidar-cli": "^3.0.0",
-    "typescript": "^5.2.2",
-    "vite": "^4.4.9",
-    "vitest": "^0.34.4",
-    "vitest-environment-clarinet": "^1.0.2"
+    "typescript": "^5.3.3",
+    "vite": "^5.1.4",
+    "vitest": "^1.3.1",
+    "vitest-environment-clarinet": "^1.1.0"
   }
 }
