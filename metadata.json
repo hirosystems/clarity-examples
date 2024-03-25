@@ -1,5 +1,5 @@
 {
-  "clarinetVersion": "2.3.1",
+  "clarinetVersion": "2.4.0",
   "examples": [
     {
       "title": "blank-project",
@@ -45,6 +45,11 @@
       "title": "ordyswap",
       "description": "Demonstrates trustless atomic swaps between Ordinals and Stacks",
       "path": "examples/ordyswap"
+    },
+    {
+      "title": "'stx-defi'",
+      "description": "''",
+      "path": "examples/stx-defi"
     }
   ]
 }
