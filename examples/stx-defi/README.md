@@ -26,26 +26,5 @@ You can manually test your contract in the Clarinet console. After entering the 
 
 `(contract-call? .stx-defi get-amount-owed)`
 
-Alternatively, you can run the unit tests included in the `tests/` folder. From the terminal session, navigate to `/clarity-example/stx-defi` folder, and run the following command:
+Alternatively, you can run the unit tests included in the `tests/` folder. From the terminal session, navigate to `/clarity-example/stx-defi` folder, and run `npm test`.
 
-```
-/clarity-examples/examples/stx-defi
-╰─$ npm test
-
-> stx-defi-tests@1.0.0 test
-> vitest run
-
-...
-...
-...
-
- ✓ tests/stx-defi.test.ts (4) 365ms
-   ✓ stx-defi tests (4) 364ms
-     ✓ verifies deposit
-     ✓ borrows 10 and verifies the amount owed to be 10
-     ✓ verifies repayment is successful
-     ✓ verifies no yields to claim yet
-
- Test Files  1 passed (1)
-      Tests  4 passed (4)
-```

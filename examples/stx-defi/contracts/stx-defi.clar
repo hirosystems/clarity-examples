@@ -56,7 +56,7 @@
     )
         ;; Ensure the requested borrow amount does not exceed the allowed amount.
         (asserts! (<= new-loan allowed-borrow) err-overborrow)
-        ;; Transfer the borrowed STX from "ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM.stx-defi" (ie: contract identifier on the chain) to "ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM".
+        ;; Transfer the borrowed STX to the user.
         (let ((recipient tx-sender))
             (try! (as-contract (stx-transfer? amount tx-sender recipient)))
         )
