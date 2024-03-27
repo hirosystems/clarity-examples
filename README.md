@@ -12,6 +12,7 @@ Furthermore, [Hiro Platform](https://platform.hiro.so/) allows developers to dis
 | --------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | [hello-world](/examples/hello-world/)               | A beginner smart contract with examples of commonly used Clarity expressions and data structures                                          |
 | [blank-project](/examples/blank-project)            | Create a project from scratch: Start from a blank scaffold for your next Clarity contract                                                 |
+| [stx-defi](/examples/stx-defi)                      | Demonstrates a DeFi protocol with deposits of STX, borrowing and repaying the STX-based loan, and interest and yield calculations         |
 | [counter](/examples/counter/)                       | Demonstrates how to use and interact with "variables" in Clarity by incrementing a 32-bit unsigned integer                                |
 | [clarity-bitcoin](/examples/clarity-bitcoin/)       | Demonstrates how to parse Bitcoin transactions and block headers, and to verify Bitcoin transactions                                      |
 | [fungible-token](/examples/fungible-token/)         | Demonstrates a basic fungible token that conforms to the SIP-010 FT standard                                                              |
