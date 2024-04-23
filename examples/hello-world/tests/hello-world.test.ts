@@ -6,7 +6,7 @@ const address1 = accounts.get("wallet_1")!;
 
 describe("test contract functions", () => {
   it("returns 'Hello World' from say-hi", () => {
-    const sayHiResponse = simnet.callPublicFn(
+    const sayHiResponse = simnet.callReadOnlyFn(
       "hello-world",
       "say-hi",
       [],
@@ -16,7 +16,7 @@ describe("test contract functions", () => {
   });
 
   it("returns the same number from echo-number", () => {
-    const echoNumberResponse = simnet.callPublicFn(
+    const echoNumberResponse = simnet.callReadOnlyFn(
       "hello-world",
       "echo-number",
       [Cl.int(42)],
