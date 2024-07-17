@@ -1,0 +1,25 @@
+[project]
+name = 'semi-fungible-token'
+description = 'A concept semi-fungible token standard and reference implementation for the Stacks blockchain based on SIP13.'
+authors = []
+telemetry = false
+cache_dir = './.cache'
+
+[[project.requirements]]
+contract_id = 'SPDBEG5X8XD50SPM1JJH0E5CTXGDV5NJTKAKKR5V.sip013-semi-fungible-token-trait'
+
+[[project.requirements]]
+contract_id = 'SPDBEG5X8XD50SPM1JJH0E5CTXGDV5NJTKAKKR5V.sip013-transfer-many-trait'
+
+[contracts.semi-fungible-token]
+path = 'contracts/semi-fungible-token.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false

@@ -50,6 +50,11 @@
       "title": "'stx-defi'",
       "description": "''",
       "path": "examples/stx-defi"
+    },
+    {
+      "title": "semi-fungible-token",
+      "description": "A concept semi-fungible token standard and reference implementation for the Stacks blockchain based on SIP13.",
+      "path": "examples/semi-fungible-token"
     }
   ]
 }

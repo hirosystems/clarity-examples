@@ -1,0 +1,235 @@
+---
+id: 0
+name: "Simulated deployment, used as a default for `clarinet console`, `clarinet test` and `clarinet check`"
+network: simnet
+genesis:
+  wallets:
+    - name: deployer
+      address: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+      balance: "100000000000000"
+    - name: faucet
+      address: STNHKEPYEPJ8ET55ZZ0M5A34J0R3N5FM2CMMMAZ6
+      balance: "100000000000000"
+    - name: wallet_1
+      address: ST1SJ3DTE5DN7X54YDH5D64R3BCB6A2AG2ZQ8YPD5
+      balance: "100000000000000"
+    - name: wallet_2
+      address: ST2CY5V39NHDPWSXMW9QDT3HC3GD6Q6XX4CFRK9AG
+      balance: "100000000000000"
+    - name: wallet_3
+      address: ST2JHG361ZXG51QTKY2NQCVBPPRRE2KZB1HR05NNC
+      balance: "100000000000000"
+    - name: wallet_4
+      address: ST2NEB84ASENDXKYGJPQW86YXQCEFEX2ZQPG87ND
+      balance: "100000000000000"
+    - name: wallet_5
+      address: ST2REHHS5J3CERCRBEPMGH7921Q6PYKAADT7JP2VB
+      balance: "100000000000000"
+    - name: wallet_6
+      address: ST3AM1A56AK2C1XAFJ4115ZSV26EB49BVQ10MGCS0
+      balance: "100000000000000"
+    - name: wallet_7
+      address: ST3PF13W7Z0RRM42A8VZRVFQ75SV1K26RXEP8YGKJ
+      balance: "100000000000000"
+    - name: wallet_8
+      address: ST3NBRSFKX28FQ2ZJ1MAKX58HKHSDGNV5N7R21XCP
+      balance: "100000000000000"
+  contracts:
+    - costs
+    - pox
+    - pox-2
+    - pox-3
+    - pox-4
+    - lockup
+    - costs-2
+    - costs-3
+    - cost-voting
+    - bns
+plan:
+  batches:
+    - id: 0
+      transactions: []
+      epoch: "2.05"
+    - id: 1
+      transactions:
+        - emulated-contract-publish:
+            contract-name: sip013-semi-fungible-token-trait
+            emulated-sender: SPDBEG5X8XD50SPM1JJH0E5CTXGDV5NJTKAKKR5V
+            path: "./.cache/requirements/SPDBEG5X8XD50SPM1JJH0E5CTXGDV5NJTKAKKR5V.sip013-semi-fungible-token-trait.clar"
+            clarity-version: 1
+        - emulated-contract-publish:
+            contract-name: sip013-transfer-many-trait
+            emulated-sender: SPDBEG5X8XD50SPM1JJH0E5CTXGDV5NJTKAKKR5V
+            path: "./.cache/requirements/SPDBEG5X8XD50SPM1JJH0E5CTXGDV5NJTKAKKR5V.sip013-transfer-many-trait.clar"
+            clarity-version: 1
+      epoch: "2.1"
+    - id: 2
+      transactions: []
+      epoch: "2.1"
+    - id: 3
+      transactions: []
+      epoch: "2.1"
+    - id: 4
+      transactions: []
+      epoch: "2.1"
+    - id: 5
+      transactions: []
+      epoch: "2.1"
+    - id: 6
+      transactions: []
+      epoch: "2.1"
+    - id: 7
+      transactions: []
+      epoch: "2.1"
+    - id: 8
+      transactions: []
+      epoch: "2.1"
+    - id: 9
+      transactions: []
+      epoch: "2.1"
+    - id: 10
+      transactions: []
+      epoch: "2.1"
+    - id: 11
+      transactions: []
+      epoch: "2.1"
+    - id: 12
+      transactions: []
+      epoch: "2.1"
+    - id: 13
+      transactions: []
+      epoch: "2.1"
+    - id: 14
+      transactions: []
+      epoch: "2.1"
+    - id: 15
+      transactions: []
+      epoch: "2.1"
+    - id: 16
+      transactions: []
+      epoch: "2.1"
+    - id: 17
+      transactions: []
+      epoch: "2.1"
+    - id: 18
+      transactions: []
+      epoch: "2.1"
+    - id: 19
+      transactions: []
+      epoch: "2.1"
+    - id: 20
+      transactions: []
+      epoch: "2.1"
+    - id: 21
+      transactions: []
+      epoch: "2.1"
+    - id: 22
+      transactions: []
+      epoch: "2.1"
+    - id: 23
+      transactions: []
+      epoch: "2.1"
+    - id: 24
+      transactions: []
+      epoch: "2.1"
+    - id: 25
+      transactions: []
+      epoch: "2.1"
+    - id: 26
+      transactions: []
+      epoch: "2.1"
+    - id: 27
+      transactions: []
+      epoch: "2.1"
+    - id: 28
+      transactions: []
+      epoch: "2.1"
+    - id: 29
+      transactions:
+        - emulated-contract-publish:
+            contract-name: semi-fungible-token
+            emulated-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            path: contracts/semi-fungible-token.clar
+            clarity-version: 2
+      epoch: "2.5"
+    - id: 30
+      transactions: []
+      epoch: "2.5"
+    - id: 31
+      transactions: []
+      epoch: "2.5"
+    - id: 32
+      transactions: []
+      epoch: "2.5"
+    - id: 33
+      transactions: []
+      epoch: "2.5"
+    - id: 34
+      transactions: []
+      epoch: "2.5"
+    - id: 35
+      transactions: []
+      epoch: "2.5"
+    - id: 36
+      transactions: []
+      epoch: "2.5"
+    - id: 37
+      transactions: []
+      epoch: "2.5"
+    - id: 38
+      transactions: []
+      epoch: "2.5"
+    - id: 39
+      transactions: []
+      epoch: "2.5"
+    - id: 40
+      transactions: []
+      epoch: "2.5"
+    - id: 41
+      transactions: []
+      epoch: "2.5"
+    - id: 42
+      transactions: []
+      epoch: "2.5"
+    - id: 43
+      transactions: []
+      epoch: "2.5"
+    - id: 44
+      transactions: []
+      epoch: "2.5"
+    - id: 45
+      transactions: []
+      epoch: "2.5"
+    - id: 46
+      transactions: []
+      epoch: "2.5"
+    - id: 47
+      transactions: []
+      epoch: "2.5"
+    - id: 48
+      transactions: []
+      epoch: "2.5"
+    - id: 49
+      transactions: []
+      epoch: "2.5"
+    - id: 50
+      transactions: []
+      epoch: "2.5"
+    - id: 51
+      transactions: []
+      epoch: "2.5"
+    - id: 52
+      transactions: []
+      epoch: "2.5"
+    - id: 53
+      transactions: []
+      epoch: "2.5"
+    - id: 54
+      transactions: []
+      epoch: "2.5"
+    - id: 55
+      transactions: []
+      epoch: "2.5"
+    - id: 56
+      transactions: []
+      epoch: "2.5"
