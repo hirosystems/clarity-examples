@@ -3,3 +3,5 @@
 **/settings/Testnet.toml
 .cache/**
 history.txt
+
+node_modules

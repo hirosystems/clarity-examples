@@ -48,8 +48,13 @@
     },
     {
       "title": "'stx-defi'",
-      "description": "''",
+      "description": "Decentralized Finance (DeFi) Loans using STX",
       "path": "examples/stx-defi"
+    },
+    {
+      "title": "btc-tx-enabled-nft",
+      "description": "A Clarity smart contract that allows you to mint an NFT based on a bitcoin transaction.",
+      "path": "examples/btc-tx-enabled-nft"
     },
     {
       "title": "semi-fungible-token",
