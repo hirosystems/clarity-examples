@@ -1,0 +1,37 @@
+---
+id: 0
+name: Devnet deployment
+network: devnet
+stacks-node: "http://localhost:20443"
+bitcoin-node: "http://devnet:devnet@localhost:18443"
+plan:
+  batches:
+    - id: 0
+      transactions:
+        - requirement-publish:
+            contract-id: SPDBEG5X8XD50SPM1JJH0E5CTXGDV5NJTKAKKR5V.sip013-semi-fungible-token-trait
+            remap-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            remap-principals:
+              SPDBEG5X8XD50SPM1JJH0E5CTXGDV5NJTKAKKR5V: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            cost: 9620
+            path: "./.cache/requirements/SPDBEG5X8XD50SPM1JJH0E5CTXGDV5NJTKAKKR5V.sip013-semi-fungible-token-trait.clar"
+            clarity-version: 1
+        - requirement-publish:
+            contract-id: SPDBEG5X8XD50SPM1JJH0E5CTXGDV5NJTKAKKR5V.sip013-transfer-many-trait
+            remap-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            remap-principals:
+              SPDBEG5X8XD50SPM1JJH0E5CTXGDV5NJTKAKKR5V: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            cost: 4010
+            path: "./.cache/requirements/SPDBEG5X8XD50SPM1JJH0E5CTXGDV5NJTKAKKR5V.sip013-transfer-many-trait.clar"
+            clarity-version: 1
+      epoch: "2.05"
+    - id: 1
+      transactions:
+        - contract-publish:
+            contract-name: semi-fungible-token
+            expected-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            cost: 44080
+            path: contracts/semi-fungible-token.clar
+            anchor-block-only: true
+            clarity-version: 2
+      epoch: "2.5"
