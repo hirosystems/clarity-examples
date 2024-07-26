@@ -7,6 +7,11 @@
       "path": "examples/blank-project"
     },
     {
+      "title": "btc-tx-enabled-nft",
+      "description": "A Clarity smart contract that allows you to mint an NFT based on a bitcoin transaction.",
+      "path": "examples/btc-tx-enabled-nft"
+    },
+    {
       "title": "clarity-bitcoin",
       "description": "Demonstrates how to parse Bitcoin transactions and block headers, and to verify Bitcoin transactions",
       "path": "examples/clarity-bitcoin"
@@ -47,19 +52,14 @@
       "path": "examples/ordyswap"
     },
     {
-      "title": "'stx-defi'",
-      "description": "Decentralized Finance (DeFi) Loans using STX",
-      "path": "examples/stx-defi"
-    },
-    {
-      "title": "btc-tx-enabled-nft",
-      "description": "A Clarity smart contract that allows you to mint an NFT based on a bitcoin transaction.",
-      "path": "examples/btc-tx-enabled-nft"
-    },
-    {
       "title": "semi-fungible-token",
       "description": "A concept semi-fungible token standard and reference implementation for the Stacks blockchain based on SIP13.",
       "path": "examples/semi-fungible-token"
+    },
+    {
+      "title": "stx-defi",
+      "description": "Decentralized Finance (DeFi) Loans using STX",
+      "path": "examples/stx-defi"
     }
   ]
 }
