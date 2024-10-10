@@ -65,7 +65,7 @@
 )
   (begin
     ;; #[filter(amount, recipient)]
-    (asserts! (is-eq tx-sender sender) ERR_NOT_TOKEN_OWNER)
+    (asserts! (or (is-eq tx-sender sender) (is-eq contract-caller sender)) ERR_NOT_TOKEN_OWNER)
     (try! (ft-transfer? clarity-coin amount sender recipient))
     (match memo to-print (print to-print) 0x)
     (ok true)

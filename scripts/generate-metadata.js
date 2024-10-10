@@ -1,12 +1,3 @@
-/*
-Script to generate metadata.json file.
-
-This should be run when the examples are modified.
-
-Your locally installed version of Clarinet will be used as the supported Clarinet version.
-If this is changing, confirm that each project is compatible.
-*/
-
 const fs = require("fs");
 const cp = require("child_process");
 const path = require("path");
@@ -28,24 +19,34 @@ cp.execFile("scripts/print-clarinet-version.sh", (error, stdout, stderr) => {
   // Put all the example names and descriptions in JSON
   fs.readdir(PROJECTS_DIR, (err, projects) => {
     if (err) throw err;
-    const examples = projects.map((projectDir) => {
-      const manifestPath = path.join(PROJECTS_DIR, projectDir, "Clarinet.toml");
 
-      const manifestFile = fs.readFileSync(manifestPath, "utf8");
+    const examples = projects
+      .filter((projectDir) => {
+        // Filter out non-directories (like .DS_Store)
+        return fs.statSync(path.join(PROJECTS_DIR, projectDir)).isDirectory();
+      })
+      .map((projectDir) => {
+        const manifestPath = path.join(
+          PROJECTS_DIR,
+          projectDir,
+          "Clarinet.toml"
+        );
 
-      // *super* basic parsing of the top level data in the manifest file
-      const parsedManifest = manifestFile.split("\n").reduce((acc, line) => {
-        const [key, value] = line.split("=");
-        if (!key || !value) return acc;
-        return { ...acc, [key.trim()]: value.trim().replaceAll('"', "") };
-      }, {});
+        const manifestFile = fs.readFileSync(manifestPath, "utf8");
 
-      return {
-        title: parsedManifest.name,
-        description: parsedManifest.description,
-        path: path.join(PROJECTS_DIR, projectDir),
-      };
-    });
+        // *super* basic parsing of the top level data in the manifest file
+        const parsedManifest = manifestFile.split("\n").reduce((acc, line) => {
+          const [key, value] = line.split("=");
+          if (!key || !value) return acc;
+          return { ...acc, [key.trim()]: value.trim().replaceAll('"', "") };
+        }, {});
+
+        return {
+          title: parsedManifest.name,
+          description: parsedManifest.description,
+          path: path.join(PROJECTS_DIR, projectDir),
+        };
+      });
 
     fs.writeFile(
       METADATA_FILE,
